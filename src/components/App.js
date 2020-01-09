@@ -22,14 +22,15 @@ class App extends  React.Component  {
         return (
 
             <Router path="/" exact component={SectionMain} >
-         
+            <Route path='/'>
+                <Redirect to="/List" />
+                </Route>
                 <div className="App">
-                <Route path="/">
+                <Route path="/List">
                     <SectionList parentCallback = {this.callbackFunction} data="dddddd"/>
                 </Route>
-                <Route path="/individual" component={SectionMain}/>
+                <Route path="/home" component={SectionMain}/>
                 </div>
-                
                 <Route path="/List">
                 <div className="section-secundaria">
                     <SectionListCenter ref="child" />
