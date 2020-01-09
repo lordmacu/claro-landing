@@ -23,12 +23,13 @@ class App extends  React.Component {
                 <Router path="/" exact component={SectionMain} >
                    
                     <div className="App">
-                        <Route path="/List">
+                        <Route path="/">
                             <SectionList parentCallback = {this.callbackFunction} data="dddddd"/>
                         </Route>
                         <Route path="/individual" component={SectionMain}/>
                     </div>
-                    <Route path="/List">
+                    
+                    <Route path="/">
                         <div className="section-secundaria">
                             <SectionListCenter ref="child" />
                             <div className="resut">
