@@ -29,6 +29,7 @@ class App extends  React.Component  {
                 </Route>
                 <Route path="/individual" component={SectionMain}/>
                 </div>
+                
                 <Route path="/List">
                 <div className="section-secundaria">
                     <SectionListCenter ref="child" />
