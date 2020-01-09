@@ -29,7 +29,7 @@ class App extends  React.Component  {
                 <Route path="/List">
                     <SectionList parentCallback = {this.callbackFunction} data="dddddd"/>
                 </Route>
-                <Route path="/home" component={SectionMain}/>
+                <Route path="/individual" component={SectionMain}/>
                 </div>
                 <Route path="/List">
                 <div className="section-secundaria">
